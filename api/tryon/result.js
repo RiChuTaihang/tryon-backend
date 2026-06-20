@@ -1,4 +1,4 @@
-﻿// GET /api/tryon/result?id=xxx - 轮询 Replicate 预测结果
+// GET /api/tryon/result?id=xxx - 轮询 Replicate 预测结果
 export default async function handler(req, res) {
   if (req.method !== 'GET') {
     return res.status(405).json({ error: 'Method not allowed' });

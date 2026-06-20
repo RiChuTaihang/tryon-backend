@@ -1,4 +1,4 @@
-﻿// POST /api/tryon - 接收两张图的 base64，创建 Replicate 预测
+// POST /api/tryon - 接收两张图的 base64，创建 Replicate 预测
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
